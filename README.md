@@ -1,4 +1,4 @@
-# itm-chat-app
+# ITM-Chat-App
 
 > ITM Chat App PWA 2019
 
