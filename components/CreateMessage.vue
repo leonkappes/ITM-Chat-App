@@ -34,12 +34,12 @@ export default {
   },
   computed: {
     validation() {
-      return this.newMessage.length >= 1
+      return this.newMessage.length > 0
     }
   },
   methods: {
     createMessage() {
-      if (this.newMessage.length >= 1) {
+      if (this.newMessage.length > 0) {
         fb.collection('messages')
           .add({
             message: this.newMessage,
