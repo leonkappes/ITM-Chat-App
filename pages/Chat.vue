@@ -28,6 +28,7 @@
 import CreateMessage from '@/components/CreateMessage'
 import fb from '@/firebase/init'
 import moment from 'moment'
+import consola from 'consola'
 
 export default {
   name: 'Chat',
@@ -41,13 +42,14 @@ export default {
     }
   },
   created() {
-    if (this.name === undefined || this.name == null) {
-      return this.$router.push({ name: 'index' })
+    if (this.$route.params.name === undefined) {
+      this.$router.push({ name: 'index' })
     }
     const ref = fb.collection('messages').orderBy('timestamp')
     ref.onSnapshot(snapshot => {
       snapshot.docChanges().forEach(change => {
-        if ((change.type = 'added')) { // eslint-disable-line
+        consola.info(change)
+        if (change.type == 'added') { // eslint-disable-line
           const doc = change.doc
           this.messages.push({
             id: doc.id,

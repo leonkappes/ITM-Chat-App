@@ -7,6 +7,7 @@
         class="text-white bg"
         placeholder="Deine Nachricht..."
         :state="validation"
+        autocomplete="off"
       ></b-input>
       <b-form-invalid-feedback :state="validation">
         Deine Nachricht muss mindestens 1 Zeichen Lang sein!
