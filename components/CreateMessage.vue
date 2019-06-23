@@ -22,8 +22,8 @@
 
 <script>
 import fb from '@/firebase/init'
+import consola from 'consola'
 
-const consola = require('consola')
 export default {
   name: 'CreateMessage',
   props: ['name'], // eslint-disable-line
