@@ -29,12 +29,12 @@ export default {
   props: ['name'], // eslint-disable-line
   data() {
     return {
-      newMessage: null
+      newMessage: ''
     }
   },
   computed: {
     validation() {
-      return this.newMessage != null
+      return this.newMessage.length != 0
     }
   },
   methods: {
