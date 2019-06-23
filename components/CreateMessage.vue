@@ -6,15 +6,8 @@
         v-model="newMessage"
         class="text-white bg"
         placeholder="Deine Nachricht..."
-        :state="validation"
         autocomplete="off"
       ></b-input>
-      <b-form-invalid-feedback :state="validation">
-        Deine Nachricht muss mindestens 1 Zeichen Lang sein!
-      </b-form-invalid-feedback>
-      <b-form-valid-feedback :state="validation">
-        Sieht gut aus!
-      </b-form-valid-feedback>
       <b-button type="submit" variant="primary">Submit</b-button>
     </b-form>
   </div>
@@ -30,11 +23,6 @@ export default {
   data() {
     return {
       newMessage: ''
-    }
-  },
-  computed: {
-    validation() {
-      return this.newMessage.length > 0
     }
   },
   methods: {
