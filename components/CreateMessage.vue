@@ -34,12 +34,12 @@ export default {
   },
   computed: {
     validation() {
-      return this.newMessage.length != 0
+      return this.newMessage.length <= 1
     }
   },
   methods: {
     createMessage() {
-      if (this.newMessage != null) {
+      if (this.newMessage.length <= 1) {
         fb.collection('messages')
           .add({
             message: this.newMessage,
@@ -49,7 +49,7 @@ export default {
           .catch(err => {
             consola.error(err)
           })
-        this.newMessage = null
+        this.newMessage = ''
       }
     }
   }
