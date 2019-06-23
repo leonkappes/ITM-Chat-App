@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import fb from '@/firebase/init'
+import fb from '../firebase/init'
 
 const consola = require('consola')
 export default {
