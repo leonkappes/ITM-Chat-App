@@ -28,7 +28,6 @@
 import CreateMessage from '@/components/CreateMessage'
 import fb from '@/firebase/init'
 import moment from 'moment'
-import consola from 'consola'
 
 export default {
   name: 'Chat',
@@ -48,7 +47,6 @@ export default {
     const ref = fb.collection('messages').orderBy('timestamp')
     ref.onSnapshot(snapshot => {
       snapshot.docChanges().forEach(change => {
-        consola.info(change)
         if (change.type == 'added') { // eslint-disable-line
           const doc = change.doc
           this.messages.push({
