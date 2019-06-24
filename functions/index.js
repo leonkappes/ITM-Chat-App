@@ -28,6 +28,16 @@ exports.onMessageCreate = functions.firestore
               console.log('Error removing document: ' + error)
             })
         }
+        if (doc.data().message.length > 200) {
+          doc.ref
+            .delete()
+            .then(() => {
+              return console.log('Document deleted successfully')
+            })
+            .catch(error => {
+              console.log('Error removing document: ' + error)
+            })
+        }
         i++
       })
     })
