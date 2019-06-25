@@ -76,7 +76,10 @@ overflow:hidden;
 margin-bottom:3%;
 }
 .chat h2{
-margin-top:3rem;
+margin-top:3%;
+}
+h2{
+font-size: 3rem;
 }
 h5{
 font-size: 1rem;
