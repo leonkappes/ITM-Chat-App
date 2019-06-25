@@ -108,15 +108,6 @@ color:#009eed!important;
 .text-info {
     color: #1fb4ff!important;
 }
-.chat h2 {
-  font-size: 2.6em;
-  margin-bottom: 0px;
-  margin-top: 50px;
-}
-.chat h5 {
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
 .chat span {
   font-size: 1.2em;
 }
