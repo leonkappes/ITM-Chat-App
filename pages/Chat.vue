@@ -73,7 +73,7 @@ html{
 overflow:hidden;
 }
 .chat h5{
-margin-bottom:0px;
+margin-bottom:3%;
 }
 .chat h2{
 margin-top:3%;
@@ -83,10 +83,12 @@ font-size: 1rem;
 }
 .card {
   background-color: rgb(68,68,70);
+  border:0;
 }
 .card-body{
 border:1px solid rgb(64,64,62);
 border-radius: .25rem;
+padding: 0;
 }
 .container {
     background-color:rgb(68,68,70);
@@ -96,11 +98,11 @@ border-radius: .25rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2.3%;
-    margin-bottom: 6%;
 }
 .messages{
 height:64.6vh;
 overflow:auto;
+max-height:auto;
 }
 .text-primary{
 color:#009eed!important;

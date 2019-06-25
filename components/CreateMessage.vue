@@ -7,7 +7,7 @@
         placeholder="Deine Nachricht..."
         autocomplete="off"
       ></b-input>
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button type="submit" variant="primary">Senden</b-button>
     </b-form>
   </div>
 </template>
@@ -43,4 +43,7 @@ export default {
 }
 </script>
 <style scoped>
+.btn-primary{
+margin-top:2.3%;
+}
 </style>
