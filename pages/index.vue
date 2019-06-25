@@ -4,7 +4,6 @@
       <div class="card-body">
         <h2 class="card-title text-center">Login</h2>
         <b-form class="text-center" @submit.prevent="login">
-          <label for="user">Username</label>
           <b-input
             id="user"
             v-model="name"
@@ -57,7 +56,47 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-input[type='text']:focus {
-  background-color: #272727;
+.card{
+border:1px solid white;
+background-color:rgb(68,68,70);
+}
+.form-control.is-invalid{
+background-color:white;
+border-color:#f00;	
+color:#000!important;
+}
+.form-control.is-valid{
+color:#000!important;
+border-color:rgb(52,199,89);
+}
+h2 {
+font-size:3rem;
+}
+.invalid-feedback {
+margin-top: .4rem;
+color:#f00;
+}
+.btn-primary{
+background-color: rgb(10,132,255);
+border-color: rgb(10,132,255);
+}
+.btn{
+margin-top: .4rem;
+margin-bottom: .75rem;
+}
+.btn-primary:hover {
+background-color: rgb(45,90,230);
+border-color: rgb(45,90,230);
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(52,199,89);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
+}
+.valid-feedback{
+margin-top: .4rem;
+color:rgb(52,199,89);
 }
 </style>
