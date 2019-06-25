@@ -7,8 +7,9 @@
           <b-input
             id="user"
             v-model="name"
-            class="text-white bg"
+            class="text-white"
             placeholder="Dein Name"
+            autocomplete="off"
             :state="validation"
           ></b-input>
           <b-form-invalid-feedback :state="validation">
@@ -87,13 +88,6 @@ margin-bottom: .75rem;
 .btn-primary:hover {
 background-color: rgb(45,90,230);
 border-color: rgb(45,90,230);
-}
-.form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: rgb(52,199,89);
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
 }
 .valid-feedback{
 margin-top: .4rem;
