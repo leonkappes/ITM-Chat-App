@@ -4,7 +4,6 @@
       <b-input
         id="user"
         v-model="newMessage"
-        class="text-white bg"
         placeholder="Deine Nachricht..."
         autocomplete="off"
       ></b-input>
@@ -44,7 +43,4 @@ export default {
 }
 </script>
 <style scoped>
-input[type='text']:focus {
-  background-color: #272727;
-}
 </style>

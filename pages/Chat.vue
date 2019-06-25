@@ -1,10 +1,10 @@
 <template>
   <div class="container chat">
-    <h2 class="text-primary text-center">Real-Time Chat</h2>
+    <h2 class="text-primary text-center">TeleApp</h2>
     <h5 class="text-secondary text-center">
       Erstellt von Leon Kappes, Lennart Münter und Andreas Reiß für ITM 2019
     </h5>
-    <div class="card bg">
+    <div class="card">
       <div class="card-body">
         <p v-if="messages.length == 0" class="text-secondary nomessages">
           [Keine Nachrichten bisher!]
@@ -62,6 +62,49 @@ export default {
 }
 </script>
 <style scoped>
+.chat{
+border:1px solid white;
+border-radius: .25rem;
+}
+.form-control{
+color:#000;
+}
+html{
+overflow:hidden;
+}
+.chat h5{
+margin-bottom:0px;
+}
+.chat h2{
+margin-top:3%;
+}
+h5{
+font-size: 1rem;
+}
+.card-body{
+border:1px solid rgb(64,64,62);
+border-radius: .25rem;
+}
+.container {
+    background-color:rgb(68,68,70);
+    width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.3%;
+    margin-bottom: 6%;
+}
+.messages{
+height:64.6vh;
+overflow:auto;
+}
+.text-primary{
+color:#009eed!important;
+}
+.text-info {
+    color: #1fb4ff!important;
+}
 .chat h2 {
   font-size: 2.6em;
   margin-bottom: 0px;
