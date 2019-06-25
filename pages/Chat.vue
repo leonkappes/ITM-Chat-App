@@ -4,7 +4,7 @@
     <h5 class="text-secondary text-center">
       Erstellt von Leon Kappes, Lennart Münter und Andreas Reiß für ITM 2019
     </h5>
-    <div class="card">
+    <div class="card bg">
       <div class="card-body">
         <p v-if="messages.length == 0" class="text-secondary nomessages">
           [Keine Nachrichten bisher!]
