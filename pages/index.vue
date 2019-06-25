@@ -17,7 +17,7 @@
           <b-form-valid-feedback :state="validation">
             Sieht gut aus!
           </b-form-valid-feedback>
-          <b-button type="submit" variant="primary">Submit</b-button>
+          <b-button type="submit" variant="primary">Bestätigen</b-button>
         </b-form>
       </div>
     </div>
