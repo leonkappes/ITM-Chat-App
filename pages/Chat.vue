@@ -102,8 +102,11 @@ padding: 0;
     margin-left: auto;
     margin-top: 2.3%;
 }
+.text-primary{
+font-size:4rem;
+}
 .messages{
-height:64.6vh;
+height:57.6vh;
 overflow:auto;
 max-height:auto;
 }
@@ -119,9 +122,5 @@ color:#009eed!important;
 .chat .time {
   display: block;
   font-size: 0.7em;
-}
-.messages {
-  max-height: 300px;
-  overflow: auto;
 }
 </style>
